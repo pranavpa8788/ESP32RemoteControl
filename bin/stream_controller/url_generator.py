@@ -3,7 +3,7 @@ from typing import List, Union
 
 from bs4 import BeautifulSoup, Tag, NavigableString
 
-def fetch_urls(preset, video_url, media_blacklist) -> List[str]:
+def fetch_video_urls(preset, video_url, media_blacklist) -> List[str]:
     if (preset == "ANIME_PRESET"):
         return fetch_anime_urls(video_url, media_blacklist)
 
